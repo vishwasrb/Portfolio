@@ -17,14 +17,15 @@
       <div class="nav-section"></div>
       <div class="left-section" >My PORTFOLIO</div>
 
-      <ul>
+      <ul id ="sidemenu">
         <li><a href="#header">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#education">EDUCATION</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#contact">CONTACT</a></li>
-       
+        <i class="fas fa-times" onclick="closemenu()"></i>
       </ul>
+      <i class="fas fa-bars"onclick="openmenu()"></i>
     </nav>
 
     <div class="header">
@@ -53,7 +54,7 @@
     <div class="about-rightsection">
       <h1 class ="sub-title">ABOUT </h1>
       <div class="container">
-        <p style="font-size: 59px;font-family: 'Poppins', sans-serif;">I am Vishwas Bhondivale from Dombivali. I completed my graduation in B.sc IT from Mumbai University in 2022 . After that I joined Carrer Infotech for MySQL and PLSQL course. <br>I created some projects like Crime Reporting System, Amazon clone , My portfolio etc.</p>
+        <p style="font-family: 'Poppins', sans-serif;">I am Vishwas Bhondivale from Dombivali. I completed my graduation in B.sc IT from Mumbai University in 2022 . After that I joined Carrer Infotech for MySQL and PLSQL course. <br>I created some projects like Crime Reporting System, Amazon clone , My portfolio ,TMDB app etc.</p>
       </div>
       </div>
       </div>
@@ -88,7 +89,7 @@
               <img src="img31.jpg"  alt="">
           </div>
           <div class="content" >
-              <div style="padding: 215px;">
+              <div style="padding: 225px;">
                   <h3 class="text-white fs-9">ACHIEVEMENT</h3>
                   <p class="fs-6 text-black" > Completed the Certification in MySQL and PLSQL <br>Completed python certification by
 kaggle.com <br>
@@ -221,6 +222,18 @@ const msg = document.getElementById("msg")
     form.reset()})
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+
+
+<script>
+  var sidemen = document.getElementById("sidemenu")
+  function openmenu(){
+    sidemen.style.right = "0";
+
+  }
+  function closemenu(){
+    sidemen.style.right = "-200px"
+  }
 </script>
 </body>
 
